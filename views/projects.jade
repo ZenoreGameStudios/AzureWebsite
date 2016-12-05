@@ -1,0 +1,78 @@
+extends layout
+
+block content
+    .container.center-block.mainBody
+        .row
+            .col-xs-12
+                .thumbnail(style='margin-top: 25px; padding-top: 10px;')
+                    h1.text-center
+                        if language === 'spanish' 
+                            | Nuestros Proyectos
+                        else
+                            | Our Projects
+            .col-xs-12
+                h3
+                    if language === 'spanish'
+                        | Proyectos completados
+                    else
+                        | Finished projects
+        .row
+            .hidden-xs.col-md-3
+                .thumbnail.sameSize
+                    h4.text-center CodeBreaker ANDROID v0.1
+                    img(src='images/iconCodeBreaker.png', title='Icono de CodeBreaker', alt='Icono de CodeBreaker', style='max-width: 90px;')
+            .col-xs-12.col-md-9
+                .thumbnail.sameSize
+                    h4.visible-xs CodeBreaker ANDROID v0.1
+                    p(style='padding-top: 25px;')
+                        if language === 'spanish'
+                            | Se trata nuestro primer juego completo. Actualmente está publicado en Google Play En este juego tienes que averiguar 
+                            | un código de cuatro números que no se repiten, y tienes varios intentos. Los números irán cambiando de color para 
+                            | indicarte si has acertado el número o no. Conseguirás más puntos si usas menos intentos. Si usas demasiados, puedes 
+                            | llegar a tener un resultado negativo.
+                        else
+                            | It is our first complete game. It is currently published on Google Play. In this game you have to find out a four-digit 
+                            | code which digits do not repeat, and you have several tries. The numbers will change color to indicate whether you got 
+                            | the digit right or not. You will get more points if you use less tries. If you use too many, you might get a negative 
+                            | score.
+        hr.divisionLine
+        .row
+            .col-xs-12
+                h3 
+                    if language === 'spanish'
+                        | Proyectos en desarrollo
+                    else
+                        | Projects in development
+        .row
+            .hidden-xs.col-md-3
+                .thumbnail.sameSize
+                    h4.text-center LaserDefender ANDROID v1.0
+                    // <img src="images/.png" title="Icono de " alt="Icono de " style="max-width: 90px;" />
+            .col-xs-12.col-md-9
+                .thumbnail.sameSize
+                    h4.visible-xs LaserDefender ANDROID v1.0
+                    p(style='padding-top: 25px;')
+                        if language === 'spanish'
+                            | Un nuevo juego que distribuiremos también a través de Google Play. Estamos desarrollando este juego basándonos en unos tutoriales de Udemy, en los cuales se hace una versión muy simple del tradicional 
+                            em Invaders
+                            | . Nosotros le hemos dado un giro más y vamos a añadir una interfaz más compleja, más elementos de juego y un sistema de progresión. Todo para Android, por supuesto.
+                        else
+                            | A new game that we will also distribute through Google Play. We are developing this game based on a few tutorials from Udemy in which a simple version of the traditional 
+                            em Invaders 
+                            | is made. We have given it a spin and we will add a more complex user interface, more game elements and a level system. All for Android, of course.</p>
+
+  //
+    .row
+        .col-xs-12
+        h2 Proyectos en desarrollo (extensos)
+    .row
+        .hidden-xs.col-md-3.thumbnail
+        h4.text-center Agente Encubierto
+        .col-xs-12.col-md-9.thumbnail
+        h4.visible-xs Agente Encubierto
+        p
+            | Un juego basado en 
+            em shooters
+            |  de tercera persona y juegos 
+            em RPG
+            | . Es de espías.

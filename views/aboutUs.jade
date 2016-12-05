@@ -1,0 +1,68 @@
+extends layout
+
+block content
+    .container.center-block.mainBody
+        .row
+            .col-xs-12
+                .thumbnail(style='margin-top: 25px; padding-top: 10px;')
+                    h1.text-center 
+                        if language === 'spanish'
+                            | Nosotros
+                        else
+                            | About Us
+            .col-xs-12.col-md-8.col-centered
+                .thumbnail(style='min-height: 200px;')
+                    h3.text-center David
+                    p
+                        if language === 'spanish'
+                            | Nacido y criado en Zaragoza, desde pequeño me gustaron los juegos y los ordenadores. A pesar de eso, no 
+                            | fué hasta hace ya casi 2 años que empecé a interesarme por la programación y el modelado y diseño 3D. 
+                            | Gracias a varios tutoriales 
+                            em online
+                            |  y algunos libros que leí al respecto, pronto aprendí a hacer pequeñas cosas. Hoy en día, trabajando en 
+                            em Unity
+                            | , un 
+                            em game engine
+                            | , estoy empezando a crear algunos juegos, y decidí compartirlos a través de Zenore.
+                        else
+                            | Born and raised in Zaragoza, from an early age I loved videogames and computers. Despite that, 
+                            | it wasn't until 2 years ago that I started to grow interested on programming and 3D modeling. 
+                            | Thanks to a few 
+                            em online 
+                            | tutorials and some books I read about that, I soon learned to do some small things in these areas. 
+                            | Today, working on 
+                            em Unity
+                            | , a 
+                            em game engine
+                            | , I'm beginning to create some games, and I decided to share them through Zenore.
+            .col-xs-12.col-md-4.col-centered
+                .thumbnail(style='max-height: 200px; min-height: 200px;')
+                    img#aboutDavid.img-responsive.center-block(src='images/aboutDavid.jpg', title='David', alt='David', style='max-height: 190px;')
+        hr.divisionLine
+        .row
+            .col-xs-12.col-md-12.col-centered
+                .thumbnail
+                    p
+                        if language === 'spanish'
+                            | De momento 
+                            strong Zenore Game Studios 
+                            | no cuenta con más integrantes, aunque puede que en algún momento en el futuro podamos presumir 
+                            | de la participación más involucrada de entusiastas de los diferentes ámbitos que componen el 
+                            | desarrollo de videojuegos, como la programación o el modelado 3D.
+                        else
+                            | So far, 
+                            strong Zenore Game Studios 
+                            | has no more staff, though in a near future we may be able to have a few more enthusiast of the 
+                            | different areas that make up videogame developing, such as programming or 3D modeling, working with us.
+                    p
+                        if language === 'spanish'
+                            | Sí que contamos con alguna colaboración puntual, que será mencionada en el espacio en el que sea 
+                            | relevante.
+                        else
+                            | There will be a few collaborations on certain things, and those will be mentioned wherever 
+                            | they are relevant.
+                    h3.text-center 
+                        if language === 'spanish'
+                            | ¡Un saludo!
+                        else
+                            | See you!

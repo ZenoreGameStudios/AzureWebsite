@@ -1,0 +1,125 @@
+extends layout
+
+block content
+  .jumbotron.center-block
+    .container
+      ul.bxslider.center-block
+        li.center-block
+          img.center-block(src='images/cover01.png', title='Programando CodeBreaker')
+        li.center-block
+          img.center-block(src='images/cover02.png', title='Diagrama de clases')
+        li.center-block
+          img.center-block(src='images/cover03.png', title='Generador de nombres')
+        li.center-block
+          img.center-block(src='images/cover04.png', title='Probando el Generador')
+        li.center-block
+          img.center-block(src='images/cover05.png', title='Código, código...')
+      script(type='text/javascript').
+        $(document).ready(function(){
+        $('.bxslider').bxSlider({
+        auto: true,
+        randomStart: true,
+        captions: true
+        });
+        });
+    .row
+      .col-xs-12
+        p.text-center
+            if language === 'english'
+              | Welcome to the main page of out small game development studio. We are a small independent studio, 
+              | and we started producing games just for fun. Try them, and tell us what you think of them.
+            else if language === 'spanish'
+              | Bienvenidos a la página principal de nuestro pequeño estudio de desarrollo de videojuegos.
+              | Somos un pequeño estudio independiente que empezamos a producir algunos juegos por diversión.
+              | Pruébalos, y cuéntanos que te parecen.
+  hr.divisionLine
+  .container.center-block.mainBody
+    .row
+      .col-xs-12.col-centered
+        .thumbnail.noticias
+          h3.text-center
+            if language === 'english'
+              | Latest news
+            else if language === 'spanish' 
+              | Últimas noticias
+          .thumbnail(style='border-color: #2c3e50; border-width: 3px;')
+            p 
+              if language === 'english'
+                | Check the latest news on our blog
+              else if language === 'spanish' 
+                | Consulta las últimas noticias en nuestro blog
+            a(href='http://zenoregamestudios.blogspot.com.es/2016/09/anadiendo-ram-al-portatil.html', target='_blank')
+              h4
+                strong 
+                  if language === 'english'
+                    | Classes start  
+                  else if language === 'spanish' 
+                    | Empieza el curso 
+                em(style='font-size: .7em;')
+                if language === 'english'
+                  | 18th of September 2016
+                else if language === 'spanish' 
+                  | 18 de Septiembre 2016
+            a(href='http://zenoregamestudios.blogspot.com.es/2016/08/publicacion-de-codebreaker.html', target='_blank')
+              h4
+                strong 
+                if language === 'english'
+                  | Publication of Codebreaker
+                else if language === 'spanish' 
+                  | Publicación de CodeBreaker 
+                em(style='font-size: .7em;') 
+                  if language === 'english'
+                    | 14th of August 2016
+                  else if language === 'spanish' 
+                    | 14 de Agosto 2016
+            a(href='http://zenoregamestudios.blogspot.com.es/2016/08/NoticiasVerano.html', target='_blank')
+              h4
+                strong 
+                if language === 'english'
+                  | Summer news 2
+                else if language === 'spanish' 
+                  | Noticias de verano 2 
+                em(style='font-size: .7em;') 
+                  if language === 'english'
+                    | 13th of August 2016
+                  else if language === 'spanish' 
+                    | 13 de Agosto 2016
+  hr.divisionLine
+  .container.center-block.mainBody
+    .row
+      .col-xs-12.col-md-6.col-centered
+        .thumbnail(style='min-height: 275px;')
+          h3.text-center CodeBreaker
+          p
+            if language === 'english'
+              | This is our first game. It's a game for Android. To try it, click on the button 'Download'. 
+              | Once it has been downloaded, click on it, install it and enjoy it.
+            else if language === 'spanish' 
+              | Éste es nuestro primer juego. Es un juego para Android.
+              | Para probarlo, haz click en el botón de 'Google Play'.
+              | Dale click, instala el juego y disfrutalo.
+          p.text-center
+            a.btn.btn-success(href='https://play.google.com/store/apps/details?id=com.zenore.CodeBreaker', role='button') Google Play
+          p
+            if language === 'english'
+              | ¡Thank you for trying out our game!
+            else if language === 'spanish' 
+              | ¡Muchas gracias por probar nuestro juego!
+      .col-xs-12.col-md-6.col-centered
+        .thumbnail(style='min-height: 275px;')
+          h3.text-center
+            if language === 'english'
+              | Send us your feedback
+            else if language === 'spanish' 
+              |  Mándanos tu opinión
+          p
+            if language === 'english'
+              | Your feedback is really valuable for us. Please, take the time to fill out our form and sned us your opinions and comments.
+            else if language === 'spanish' 
+              | Tu opinión es muy valiosa para nosotros. Por favor, tómate unos momentos para rellenar nuestra encuesta y hacernos llegar tus opiniones y comentarios.
+          p.text-center
+            a.btn.btn-primary(href='feedback.html', role='button')
+              if language === 'english'
+                | Feedback
+              else if language === 'spanish' 
+                | Tu Opinión
